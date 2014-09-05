@@ -1,8 +1,9 @@
 package main
 
 import (
-	"encoding/binary"
 	"bytes"
+	"encoding/binary"
+	"fmt"
 	"flag"
 	"net"
 	"reflect"
@@ -81,9 +82,9 @@ func main() {
 	flag.StringVar(&id, "id", "", "a UNIQUE_ID")
 	flag.Parse()
 	unique_id := unique_id_uudecode(id)
-	println("unique_id.stamp =", unique_id.stamp.Format(time.ANSIC))
-	println("unique_id.in_addr =", unique_id.ip.String())
-	println("unique_id.pid =", unique_id.pid)
-	println("unique_id.counter =", unique_id.counter)
-	println("unique_id.thread_index =", unique_id.thread_index)
+	fmt.Println("unique_id.stamp =", unique_id.stamp.Format(time.ANSIC))
+	fmt.Println("unique_id.in_addr =", unique_id.ip.String())
+	fmt.Println("unique_id.pid =", unique_id.pid)
+	fmt.Println("unique_id.counter =", unique_id.counter)
+	fmt.Println("unique_id.thread_index =", unique_id.thread_index)
 }

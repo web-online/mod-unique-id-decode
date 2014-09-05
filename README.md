@@ -31,14 +31,29 @@ mod_unique_id_uudecoder.py
 ### run
 
 ```
-python mod_unique_id_uudecoder.py -i VAYyin8AAAEAAAKa@DMAAAAB
+python -m mod_unique_id_uudecoder -i VAYyin8AAAEAAAKa@DMAAAAB
 ```
 
 mod_unique_id_uudecoder.go
 --------------------------
 
+### build
+
+```
+go build -o mod_unique_id_uudecoder_go mod_unique_id_uudecoder.go
+```
+
 ### run
 
 ```
-go run mod_unique_id_uudecoder.go -i VAYyin8AAAEAAAKa@DMAAAAB
+./mod_unique_id_uudecoder_go -i VAYyin8AAAEAAAKa@DMAAAAB
+```
+
+mod_unique_id_uudecoder.rb
+--------------------------
+
+### run
+
+```
+ruby mod_unique_id_uudecoder.rb -i VAYyin8AAAEAAAKa@DMAAAAB
 ```
